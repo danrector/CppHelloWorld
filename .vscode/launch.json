@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      
+
+    {
+      "type": "vgdb",
+      "request": "launch",
+      "name": "C/C++ Debug Launch",
+      "debugger": "gdb",
+      "program": "/a.out",
+      "args": [],
+      "cwd": ""
+    },
+    {
+      "name": "(lldb) Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "enter program name, for example ${workspaceFolder}/a.out",
+      "processId": "${command:pickProcess}",
+      "MIMode": "lldb"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": true,
+      "externalConsole": false,
+      "cwd": "/Users/drector/Documents/projects/helloworld",
+      "program": "/Users/drector/Documents/projects/helloworld/build/Debug/outDebug",
+      "MIMode": "gdb"
+    }
+  ]
+}
